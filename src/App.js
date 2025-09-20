@@ -73,7 +73,7 @@ export default function SnakeGame() {
 
   useEffect(() => {
     if (!gameOver) {
-      const interval = setInterval(moveSnake, 300);
+      const interval = setInterval(moveSnake, 200);
       return () => clearInterval(interval);
     }
   }, [dir, gameOver]);
@@ -126,12 +126,12 @@ export default function SnakeGame() {
       {/* 👇 أزرار التحكم للموبايل */}
       <div style={{ marginTop: 20 }}>
         <div>
-          <button onClick={() => handleButton("up")} style={{width:30 , height:30 , padding:30 , margin:20}}>⬆️</button>
+          <button onClick={() => handleButton("up")} style={{width:40 , height:40 , padding:40 , margin:20}}>⬆️</button>
         </div>
         <div>
-          <button onClick={() => handleButton("left")} style={{width:30 , height:30 , padding:30 , margin:20}}>⬅️</button>
-          <button onClick={() => handleButton("down")} style={{width:30 , height:30 , padding:30 , margin:20}}>⬇️</button>
-          <button onClick={() => handleButton("right")} style={{width:30 , height:30 , padding:30 , margin:20}}>➡️</button>
+          <button onClick={() => handleButton("left")} style={{width:40 , height:40 , padding:40 , margin:20}}>⬅️</button>
+          <button onClick={() => handleButton("down")} style={{width:40 , height:40 , padding:40 , margin:20}}>⬇️</button>
+          <button onClick={() => handleButton("right")} style={{width:40 , height:40 , padding:40 , margin:20}}>➡️</button>
         </div>
       </div>
     </div>
